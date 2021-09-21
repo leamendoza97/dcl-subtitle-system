@@ -46,6 +46,7 @@ export class SubtitleSystem implements ISystem {
       this.offsetMs = SubtitleSystem.INVALID_OFFSET;
       this.maxEndOffsetMs = SubtitleSystem.INVALID_OFFSET;
       this.paused = false;
+      log(`Couldn't load the subtitles. Please verify the subtitle format.`);
       return false;
     }
   }
