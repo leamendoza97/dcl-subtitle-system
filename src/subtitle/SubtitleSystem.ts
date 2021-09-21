@@ -95,8 +95,7 @@ export class SubtitleSystem implements ISystem {
 
     // Update the firedEvents
     if (endedCues.length > 0 || firableCues.length > 0) {
-      //debugger
-      this.firedCues = firableCues.map(($) => $.index);
+      this.firedCues = currentCues.map(($) => $.index);
     }
   }
 
